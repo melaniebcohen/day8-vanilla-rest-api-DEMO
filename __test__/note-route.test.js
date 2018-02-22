@@ -14,8 +14,8 @@ describe('Note Routes', function() {
       .end((err, res) => {
         if (err) return done(err);
         note = JSON.parse(res.text)
-        console.log('res.text:',res.text)
-        console.log('note:',note);
+        // console.log('res.text:',res.text)
+        // console.log('note:',note);
         expect(res.status).toEqual(200);
         expect(note.name).toEqual('test name')
         expect(note.content).toEqual('test content')
